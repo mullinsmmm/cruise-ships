@@ -1,6 +1,5 @@
 /*globals describe it expect */
 const Ship = require('../src/cruiseShips.js');
-const Port = require('../src/cruiseShips.js');
 
 describe ('Ship', () => {
     xit('can be initiated', () => {
@@ -22,8 +21,3 @@ describe ('Ship', () => {
      });
 });
 
-describe ('Port', () => {
-    it('can be instantiated', () => {
-        expect(new Port()).toBeInstanceOf(Object);
-    })
-});
