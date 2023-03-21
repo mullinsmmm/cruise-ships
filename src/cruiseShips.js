@@ -1,15 +1,15 @@
-let location = ('In Home Port');
-const startingPort = ('Portsmouth');
+const startingPort = ['Portsmouth'];
 
 class Ship {
     constructor(name) {
       this.name = name,
       this.startingPort = startingPort,
-      this.location = location
+      this.dock = dock
     }
 
-    setSail(){}
-    
+    setSail(){
+        this.startingPort = '';
+    }
 }
 
 const boat1 = new Ship('Ferry');
