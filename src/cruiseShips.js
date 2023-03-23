@@ -11,16 +11,7 @@ class Ship {
     };
 };
 
-class Port {
-    constructor(name) {
-        this.name = name
-    };
-};
-
 const boat1 = new Ship('Ferry');
-
-const port1 = new Port('Calais');
-
 
 module.exports = Ship;
   
