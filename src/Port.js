@@ -4,6 +4,4 @@ class Port {
     };
 };
 
-const port1 = new Port('Calais');
-
 module.exports = Port;
