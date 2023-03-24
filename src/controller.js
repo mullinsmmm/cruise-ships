@@ -18,8 +18,16 @@ Controller.prototype.initialiseSea = function initialiseSea() {
 
   renderPorts (ports){
     const portsElement = document.querySelector('#ports');
-    portsElements.style.width = '0px';
+    portsElement.style.width = '0px';
   };
+
+  //This section could be in the wrong place
+  ports.forEach((port, index) => {
+    const newPortElement = document.createElement('div');
+    newPortElement.className = 'port';
+  
+    portsElement.appendChild(newPortElement);
+  })
 };
 
 if(typeof module !== 'undefined' && module.exports) {
