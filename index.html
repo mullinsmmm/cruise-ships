@@ -14,18 +14,25 @@
         <div id="ports">
         </div>
     </div>
+
     <script src="src/Port.js"></script>
     <script src="src/cruiseShips.js"></script>
     <script src="src/itinerary.js"></script>
     <script src="src/controller.js"></script>
+    
     <script>
         const controller = new Controller();
+
         const itinerary = new Itinerary([
-            new port('Portsmouth'),
+            new Port('Portsmouth'),
             new Port('Calais'),
             new Port('Bilbao'),
             new Port('Barcelona')
         ])
+
+        controller.renderPorts(itinerary.ports)
     </script>
 </body>
 </html>
+
+    <!-- <div class="port" data-port-name="New York City" data-port-index="0"></div>  -->
