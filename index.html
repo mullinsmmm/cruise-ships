@@ -7,6 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -22,8 +25,6 @@
     <script src="src/controller.js"></script>
     
     <script>
-        const controller = new Controller();
-
         const itinerary = new Itinerary([
             new Port('Portsmouth'),
             new Port('Calais'),
@@ -33,8 +34,10 @@
 
         const ship = new Ship(itinerary);
 
+        const controller = new Controller(ship);
+
         controller.renderPorts(itinerary.ports);
-        controller.renderShip(ship);
+        controller.renderShip();
     </script>
 </body>
 </html>
